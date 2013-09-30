@@ -11,3 +11,8 @@
 
 %:
 	dh $@ 
+
+override_dh_autoclean::
+	dh_autoclean
+	$(RM) -r longerusername.egg-info/
+
