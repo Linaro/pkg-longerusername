@@ -1,5 +1,6 @@
 longerusername (0.4-1) unstable; urgency=low
 
   * Initial release (Closes: #nnnn)  <nnnn is the bug number of your ITP>
+  * Add python-setuptools to build-depends
 
  -- Neil Williams <codehelp@debian.org>  Wed, 29 May 2013 17:12:39 +0100
