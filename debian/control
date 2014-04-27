@@ -1,19 +1,27 @@
-Source: longerusername
+Source: django-longerusername
 Section: net
 Priority: optional
-Maintainer: Neil Williams <codehelp@debian.org>
+Maintainer: Debian LAVA team <pkg-linaro-lava-devel@lists.alioth.debian.org>
+Uploaders: Antonio Terceiro <terceiro@debian.org>,
+ Neil Williams <codehelp@debian.org>,
+ Fathi Boudra <fabo@debian.org>, Jordi Mallach <jordi@debian.org>
 Build-Depends: debhelper (>= 8.0.0),
  python | python-all | python-dev | python-all-dev,
  python-sphinx (>= 1.0.7+dfsg) | python3-sphinx,
  python-setuptools
 X-Python-Version: 2.7
-Standards-Version: 3.9.4
+Standards-Version: 3.9.5
 Homepage: http://www.linaro.org/engineering/validation
-#Vcs-Git: git://git.debian.org/collab-maint/django-debian.git
-#Vcs-Browser: http://git.debian.org/?p=collab-maint/django-debian.git;a=summary
+Vcs-Git: https://github.com/Linaro/pkg-longerusername.git
+Vcs-Browser: https://github.com/Linaro/pkg-longerusername
 
-Package: python-longerusername
+Package: python-django-longerusername
 Architecture: all
 Depends: ${python:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: allow longer usernames in django
+ This package provides a migration and a monkeypatch to make
+ the django auth.user username field accept longer usernames,
+ instead of the arbitrarily short 30 characters.
+ .
+ It is designed to be a simple include-and-forget project that
+ makes a little headache go away.
